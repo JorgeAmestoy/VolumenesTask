@@ -28,4 +28,20 @@ Lo buscamos desde el navegador escribiendo nuestra ip (ip address):
 
 http://172.17.0.1:8080/
 
+### 4. Utiliza bind mount para que el directorio del apache2 'htdocs' este montado un directorio que tu elijas.
+
+Utiliza -v "$PWD"/htdocs:/usr/local/apache2/htdocs/
+
+La carpeta htdocs ya la habíamos creado en ejercicios previo. Volviendo a eliminar el docker para crearlo de nuevo;
+```
+DOCKER RUN -DIT --NAME DAM_WEBI1 -P 8080:80 -V /HOME/DAM2/SXE/APACHE/HTDOCS:USR/LOCAL/APACHE2/HTDOCS/ HTTP:2.4
+```
+### 5.Realiza un 'hola mundo' en html (usa Code) y comprueba que accedes desde el navegador.
+
+Editamos el html con Visual Code y lo comprobamos con la ip en el navegador:
+
+http://172.17.0.1:8080/
+
+
+
 
