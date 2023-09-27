@@ -46,6 +46,14 @@ http://172.17.0.1:8080/
 ```
  docker run -dit --name dam_web2 -p 9080:80 -v /home/dam2/DAM2/SXE/Apache/htdocs:/usr/local/apache2/htdocs/ httpd:2.4
 ```
+### 7. Comprueba que los dos servidores 'sirven' la misma página, es decir, cuando consultamos en el navegador:
 
+    http://localhost:9080 
+    http://localhost:8080
+ Sí, funcionan en ambos
+
+### 8. Realiza modificaciones de la página y comprueba que los dos servidores 'sirven' la misma página
+
+Modifico el index.html y compruebo que efectivamente se reflejan los cambios en ambos servidores.
 
 
