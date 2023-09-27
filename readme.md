@@ -42,6 +42,10 @@ Editamos el html con Visual Code y lo comprobamos con la ip en el navegador:
 
 http://172.17.0.1:8080/
 
+### 6: Crea otro contenedor 'dam_web2' con el mismo volumen y a otro puerto, por ejemplo 9080.
+```
+ docker run -dit --name dam_web2 -p 9080:80 -v /home/dam2/DAM2/SXE/Apache/htdocs:/usr/local/apache2/htdocs/ httpd:2.4
+```
 
 
 
